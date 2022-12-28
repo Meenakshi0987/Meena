@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mesh{
+  display: grid;
+  width: 114em;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+  margin-top: 100px;
+}
+
+.mesh-item {
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 4rem 7rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.mesh-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 5rem 9rem rgba(0, 0, 0, 0.5);
+}
+
+.sheet-img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.sheet-content {
+  padding: 3rem;
+}
+
+.sheet-header {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #0d0d0d;
+  margin-bottom: 1.3rem;
+}
+
+.sheet-text {
+ font-size: medium;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+  height: 200px;
+  overflow: hidden;
+}
+
+.sheet-btn {
+  display: block;
+  width: 100%;
+  padding: 1.8rem;
+  font-size: 3rem;
+  text-align: center;
+  color:rgb(15, 187, 23);
+  background-color: #f4fdd8;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.sheet-btn span {
+  margin-left: 1rem;
+  transition: 0.3s;
+}
+
+.sheet-btn:hover,
+.sheet-btn:active {
+  background-color: #fcc2f8;
+}
+
+.sheet-btn:hover span,
+.sheet-btn:active span {
+  margin-left: 1.5rem;
+}
+.nav {
+  position: absolute;
+  margin-top: -90px;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+.movie-sheet {
+  display: flex;
+  justify-content:center;
+color: rgb(221, 0, 255);
+}
+.movie-details {
+  display: flex !important;
+}
+.movie-sheet1 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 40px;
+}
